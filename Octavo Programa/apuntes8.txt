@@ -1,0 +1,5 @@
+Al multiplicar las matrices por cada core se hace: si tenemos 40 filas y 8 cores= 40/8 = 5. esto significa que partes la funcion, en este caso mult de matrices, se divide en 5 filas por cada core(o sea que cada uno se encarga de realizar 5 filas de tareas).
+A esto se le llama problemas directamente paralelizables.
+
+El paralelismo esta basado en que se debe dar la misma cantidad de trabajo a cada core.
+cada celda del resultado de multiplicaciones es atómico
